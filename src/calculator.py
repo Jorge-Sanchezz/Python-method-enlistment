@@ -4,7 +4,10 @@ y = input("Insert y value ")
 
 #Sum the values (we have to convert them to
 #int to use the + character properly)
-z = int(x) + int(y)
+z = float(x) + float(y)
+
+#Round the result to the nearest int
+z = round(z)
 
 #Print the final result
 print("The sum of", x, "+", y, "=", z)
