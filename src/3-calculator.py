@@ -1,7 +1,7 @@
-x = input("Insert x value ")
-y = input("Insert y value ")
+x = float(input("Insert x value "))
+y = float(input("Insert y value "))
 
-z = float(x) + float(y)
+z = x + y
 
 z = round(z, 2)
 
