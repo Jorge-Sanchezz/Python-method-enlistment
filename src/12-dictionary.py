@@ -1,10 +1,3 @@
-students = {
-    "Hermione": "Gryffindor", 
-    "Harry": "Gryffindor", 
-    "Ron": "Gryffindor", 
-    "Draco": "Slytherin"
-}
-
 students = [
     {"name": "Hermione", "house": "Gryffindor", "patronus": "Otter"},
     {"name": "Harry", "house": "Gryffindor", "patronus": "Stag"},
@@ -13,4 +6,4 @@ students = [
 ]
 
 for i in students:
-    print(i, students[i], sep=", ")
+    print(i["name"], i["house"], i["patronus"], sep=", ")
