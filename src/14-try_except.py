@@ -1,11 +1,11 @@
 def main():
-    x = get_int()
+    x = get_int("What's number x? ")
     print(f"x is {x}")
 
-def get_int():
+def get_int(prompt):
     while True:
         try:
-            x = int(input("What's number x? "))
+            x = int(input(prompt))
             return x
         #Catch an value error if founded one
         except ValueError:
