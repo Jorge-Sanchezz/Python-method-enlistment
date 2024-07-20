@@ -1,0 +1,1 @@
+from tested_calculator_21 import square
