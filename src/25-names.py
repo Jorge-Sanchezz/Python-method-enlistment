@@ -1,7 +1,15 @@
-name = input("What's your name? ")    
+name = input("What's your name? ")
+names = []
 
-file = open("names.txt", "a")
-#'a' stands for appending which will make a list without overwriting
+#Here, "a" stands for append and avoids the last name to be deleted when added a new input
+with open("names.txt", "a") as file:
+    #Once the indented code is ran, the file is automatically closed
+    file.write(f"{name}\n")
+    
+with open("names.txt") as file:
+    for line in file:
+        names.append(line.strip())
 
-file.write(f"{name}\n")
-file.close()
+#We sort the list created at the beginning (which was assigned the txt file information)
+for name in sorted(names):
+    print(f"hello, {name}")
