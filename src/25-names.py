@@ -2,11 +2,11 @@ name = input("What's your name? ")
 names = []
 
 #Here, "a" stands for append and avoids the last name to be deleted when added a new input
-with open("names.txt", "a") as file:
+with open("names.csv", "a") as file:
     #Once the indented code is ran, the file is automatically closed
     file.write(f"{name}\n")
     
-with open("names.txt") as file:
+with open("names.csv") as file:
     for line in file:
         names.append(line.strip())
 
